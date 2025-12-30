@@ -1,0 +1,24 @@
+#Ignore everything
+*
+
+#Don't ignore directories
+!*/
+
+# Specifically ignore
+dist/**
+node_modules/**
+
+#Add what we need
+!.gitignore
+!.npmrc
+!index.html
+!oxlintrc.json
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!README.md
+!tsconfig.json
+!vite.config.ts
+!vitest.config.ts
+
+!src/**
