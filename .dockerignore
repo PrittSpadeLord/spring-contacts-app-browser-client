@@ -1,0 +1,17 @@
+# ignore everything
+*
+
+# add what we need
+!.npmrc
+!index.html
+!nginx.conf
+!oxlintrc.json
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!tsconfig.json
+!vite.config.ts
+!vitest.config.ts
+
+!public/**
+!src/**
