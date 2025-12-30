@@ -1,14 +1,11 @@
 # Generate nodejs stage
 FROM node:24.11.1-trixie AS node
 
-RUN corepack enable && corepack prepare pnpm@10.26.2 --activate
-
 WORKDIR /app
 
-COPY package*.json ./
+COPY pnpm-lock.yaml pnpm-workspace.yaml package.json ./
 
-COPY pnpm-lock.yaml package.json ./
-RUN pnpm install --frozen-lockfile
+RUN corepack enable && corepack install && pnpm install --frozen-lockfile
 
 COPY . .
 
