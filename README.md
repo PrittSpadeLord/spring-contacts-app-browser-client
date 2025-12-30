@@ -17,3 +17,5 @@ npx pnpm run build
 ```
 
 This will ensure builds will not be affected by differences in pnpm versions. In the future, a Docker container will standardize this approach.
+
+P.S: The Docker container has been built to run the app in production. In the future, a testing stage will be incorporated along with a Docker compose to tie it all together
