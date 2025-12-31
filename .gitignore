@@ -5,7 +5,9 @@
 !*/
 
 # Specifically ignore
+dist/
 dist/**
+node_modules/
 node_modules/**
 
 #Add what we need
