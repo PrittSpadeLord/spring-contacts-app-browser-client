@@ -1,16 +1,14 @@
 <template>
-    <div>{{ displayText }}</div>
+    <NavBar />
 </template>
 
 <script setup lang="ts">
-
     import { ref } from 'vue'
-
-    const displayText = ref<string>('');
-
-    displayText.value = 'Hello World!'
+    import NavBar from './components/NavBar.vue';
 </script>
 
 <style>
-
+    .TESTER {
+        border: 1px solid red;
+    }
 </style>
